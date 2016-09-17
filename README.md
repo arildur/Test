@@ -55,6 +55,7 @@ I: Some time later, when the Payment Cheque Escrow Time has elapsed and provided
 ## Message definition
 Overview of protocol messages:
 
+
 | Method | Request message   | Response messages          | Sender        | Receiver
 |--------|-------------------|----------------------------|---------------|----------
 | POST   | send_cheque       | send_cheque_response       | Any           | Any with Money Address
