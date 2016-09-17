@@ -33,14 +33,14 @@ The operation involves a Cheque Sender, Cheque Receiver and Cheque Issuer. Keep 
 # Header
 
 
-<pre>
- +---------+
- |         |
- | Cheque  |
- | Sender  |
- |         |
- +---------+
-</pre>
+```
+ +----------+
+ |          |
+ |  Cheque  |----(A)---->
+ |  Sender  |
+ |          |
+ +----------+
+```
 
 ## Message definition
 
