@@ -33,19 +33,7 @@ Note that message (A), (B) and (C) of the operation is described in other specif
 Note that the Cheque Issuer body at the left and right in the diagram is the same body. It is painted twice in order to make the diagram easier to read.
 
 The operation involves a Cheque Sender, Cheque Receiver and Cheque Issuer. In this example the Cheque Sender may be a customer and Cheque Receiver may be a merchant.
-```
- +------------+           +------------+           +------------+           +------------+
- |            |           |            |<---(A)----|            |           |            |
- |            |<---(B)----|            |           |            |           |            |
- |            |----(C)--->|            |           |            |           |            |
- |  Cheque    |           |   Cheque   |----(D)--->|   Cheque   |           |   Cheque   |
- |  Issuer    |           |   Sender   |           |  Receiver  |----(E)--->|   Issuer   |
- |  (bank)    |           | (customer) |           | (merchant) |<---(F)----|   (bank)   |
- |            |           |            |<---(G)----|            |           |            |
- |            |           |            |<---(H)--->|            |           |            |
- |            |           |            |           |            |<---(I)----|            |
- +------------+           +------------+           +------------+           +------------+
-```
+
 A: Cheque Sender (customer) reads some information from the Cheque Receiver (merchant) and is requested to make a payment. Customer reads price and terms as a payment request from the merchant. (This payment request and the message is not covered by this protocol. The payment request may provided as a Payment Request as defined by the Payment Request File Specification and the message may be provided as defined in the Payment Request Protocol.)
 
 B: Cheque Sender (customer) accepts the price and terms stated in the Payment Request and requests the Cheque Issuer (bank) to issue a cheque. (This request is not covered by this protocol, but may be sent using the Banking App Protocol.)
